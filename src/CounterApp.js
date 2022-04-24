@@ -8,11 +8,17 @@ const CounterApp = ( { value  } ) => {
         throw new Error("No hay valor");
     }
     
+    // handleAdd
+    const handleAdd = (e) => {
+        console.log(e);
+    }
 
     return (
         <>
             <h1>CounterApp</h1>
             <h2> { value } </h2>
+
+            <button onClick= {  handleAdd } >+1</button>
      
         </>
     );
